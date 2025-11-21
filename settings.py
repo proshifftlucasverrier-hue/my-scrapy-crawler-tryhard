@@ -27,9 +27,9 @@ DOWNLOAD_DELAY = 3
 # }
 
 # Enable or disable downloader middlewares
-# DOWNLOADER_MIDDLEWARES = {
-#     'my_scrapy_crawler.middlewares.MyScrapyCrawlerDownloaderMiddleware': 543,
-# }
+DOWNLOADER_MIDDLEWARES = {
+    'my_scrapy_crawler.middlewares.EncodingDetectorMiddleware': 543,
+}
 
 # Enable or disable extensions
 # EXTENSIONS = {
